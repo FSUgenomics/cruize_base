@@ -31,7 +31,7 @@ RUN yum update -y && yum install -y \
  wget \
  gcc-c++
 
-RUN mkdir -p /root/bin/x86_64 /var/www/cgi-bin-
+RUN mkdir -p /root/bin/x86_64
 
 RUN git clone http://genome-source.cse.ucsc.edu/samtabix.git /opt/samtabix && cd /opt/samtabix && make
 
